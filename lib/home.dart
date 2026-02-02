@@ -1,3 +1,7 @@
+import 'package:atm_consultoria/menu_cliente.dart';
+import 'package:atm_consultoria/menu_contato.dart';
+import 'package:atm_consultoria/menu_empresa.dart';
+import 'package:atm_consultoria/menu_servico.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -9,7 +13,31 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   void _abrirEmpresa() {
-    print("Abrir Empresa");
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => MenuEmpresa()),
+    );
+  }
+
+  void _abrirServico() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => MenuServico()),
+    );
+  }
+
+  void _abrirCliente() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => MenuCliente()),
+    );
+  }
+
+  void _abrirContato() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => MenuContato()),
+    );
   }
 
   @override
@@ -41,7 +69,7 @@ class _HomeState extends State<Home> {
                   ),
                   //menu serviço
                   GestureDetector(
-                    onTap: _abrirEmpresa,
+                    onTap: _abrirServico,
                     child: const Image(
                       image: AssetImage("images/menu_servico.png"),
                     ),
@@ -56,14 +84,14 @@ class _HomeState extends State<Home> {
                 children: [
                   //menu cliente
                   GestureDetector(
-                    onTap: _abrirEmpresa,
+                    onTap: _abrirCliente,
                     child: const Image(
                       image: AssetImage("images/menu_cliente.png"),
                     ),
                   ),
                   //menu contato
                   GestureDetector(
-                    onTap: _abrirEmpresa,
+                    onTap: _abrirContato,
                     child: const Image(
                       image: AssetImage("images/menu_contato.png"),
                     ),
