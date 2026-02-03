@@ -63,16 +63,12 @@ class _HomeState extends State<Home> {
                   //menu empresa
                   GestureDetector(
                     onTap: _abrirEmpresa,
-                    child: const Image(
-                      image: AssetImage("images/menu_empresa.png"),
-                    ),
+                    child: Image.asset("images/menu_empresa.png"),
                   ),
                   //menu serviço
                   GestureDetector(
                     onTap: _abrirServico,
-                    child: const Image(
-                      image: AssetImage("images/menu_servico.png"),
-                    ),
+                    child: Image.asset("images/menu_servico.png"),
                   ),
                 ],
               ),
@@ -85,16 +81,12 @@ class _HomeState extends State<Home> {
                   //menu cliente
                   GestureDetector(
                     onTap: _abrirCliente,
-                    child: const Image(
-                      image: AssetImage("images/menu_cliente.png"),
-                    ),
+                    child: Image.asset("images/menu_cliente.png"),
                   ),
                   //menu contato
                   GestureDetector(
                     onTap: _abrirContato,
-                    child: const Image(
-                      image: AssetImage("images/menu_contato.png"),
-                    ),
+                    child: Image.asset("images/menu_contato.png"),
                   ),
                 ],
               ),
