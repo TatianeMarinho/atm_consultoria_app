@@ -8,7 +8,7 @@ class MenuEmpresa extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text("Empresa"),
+        title: const Text("Empresa", style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(

@@ -45,7 +45,10 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text("ATM Consultoria"),
+        title: const Text(
+          "ATM Consultoria",
+          style: TextStyle(color: Colors.white),
+        ),
         backgroundColor: Colors.green,
       ),
       body: Container(
