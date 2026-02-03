@@ -8,8 +8,9 @@ class MenuServico extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text("Serviços", style: TextStyle(color: Colors.white)),
+        title: const Text("Serviços"),
         backgroundColor: Colors.green,
+        foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
         child: Container(
