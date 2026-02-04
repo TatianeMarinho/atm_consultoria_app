@@ -19,6 +19,7 @@ class MenuEmpresa extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset("images/detalhe_empresa.png"),
                   const Padding(
